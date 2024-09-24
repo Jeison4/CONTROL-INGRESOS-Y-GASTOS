@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #05052463;
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+   
+}
+
+.logo img{
+    margin-left: 50px;
+    width: 130px;
+}
+
+header{
+    display: flex;
+    height: 90px;
+    background-image: url(/img/vecteezy_abstract-banner-design-web-templates-horizontal-header-web_3586238.jpg);
+    background-size: 700px;
+    justify-content: space-between;
+}
+
+h2{
+
+    color: #dfdbdb;
+    padding-left: 400px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:  30px;
+    font-family: sans-serif;
+    
+}
+
+
+
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    margin: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.totals {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button.delete-btn, button.edit-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button.edit-btn {
+    background-color: blue;
+}
