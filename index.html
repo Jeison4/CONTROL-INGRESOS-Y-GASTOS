@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Ingresos y Gastos</title>
+    <link rel="stylesheet" href="/CSS/estilo.css">
+</head>
+<body>
+        <header>
+          <div class="logo">
+            <img src="/img/logo2-removebg-preview.png" alt="">
+            <h2 >Control de Ingresos y Gastos</h2>
+          </div> 
+        </header>
+        
+        <div class="container">  
+        <form id="transaction-form">
+            <input type="date" id="date" required>
+            <input type="text" id="description" placeholder="Descripción" required>
+            <input type="number" id="amount" placeholder="Monto" required>
+            <select id="type">
+                <option value="income">Ingreso</option>
+                <option value="expense">Gasto</option>
+            </select>
+            <button type="submit">Agregar</button>
+        </form>
+        <form id="filter-form">
+            <input type="month" id="filter-month">
+            <select id="filter-type">
+                <option value="all">Todos</option>
+                <option value="income">Ingreso</option>
+                <option value="expense">Gasto</option>
+            </select>
+            <button type="button" id="filter-button">Filtrar</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Descripción</th>
+                    <th>Monto</th>
+                    <th>Tipo</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="transaction-table">
+                <!-- Las transacciones se agregarán aquí -->
+            </tbody>
+        </table>
+        <div class="totals">
+            <p>Total Ingresos: <span id="total-income">0</span></p>
+            <p>Total Gastos: <span id="total-expense">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
